@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonali Singh | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 {
+            color: #00bcd4;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .hero {
+            min-height: 85vh;
+            background: #e3f2fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #222;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00bcd4;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill,
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .contact {
+            background: #e3f2fd;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Sonali Singh</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <img src="profile.jpg" alt="Sonali's Profile Photo">
+
+        <div>
+            <h1>Hello, I'm Sonali Singh</h1>
+            <p>BCA Student | Aspiring Web Developer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a BCA student passionate about web development
+            and technology. I enjoy learning new skills and
+            creating simple and creative websites.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+            <div class="project">
+                <h3>Nova Studio</h3>
+                <p>A responsive landing page created using HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>A personal website to showcase my skills and projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: sonalisingh50086@gmail.com</p>
+        <p>Location: Dehradun, India</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Sonali Singh | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
